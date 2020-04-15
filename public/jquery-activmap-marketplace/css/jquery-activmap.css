@@ -1,0 +1,148 @@
+/* Activ'Map Plugin
+ * Copyright (c) 2015 Pandao
+ * Documentation : /doc/index.html
+ */
+
+#activmap-accordion {
+    clear: both; float:left; width:100%;
+}
+.panel-group .panel{ float:left; width:100%;}
+#activmap-accordion .panel-heading .activmap-accordion-toggle:after {
+    margin: 0 0 0 15px;
+}
+.radius{ margin-top:15px;}
+#activmap-reset .fa-ban:before {color: #9E0000;}
+.input-group-addon .fa-location-arrow:before{ color:#7d7d7d;}
+a#activmap-geolocate {width: 100%;}
+.input-group-addon{ background:#434343; border:0px;}
+#activmap-accordion .panel-heading {background: #f1582c; color: #fff; float:left; width:100%;}
+.panel-title a{ font-size:14px;}
+.panel-title a .fa{ margin-right:7px;}
+.panel-heading{ padding:0px;}
+.panel-title{ float:left; width:100%;}
+#activmap-accordion .panel-title a {display: block; padding:13px 15px;}
+div#collapse-services ,div#collapse-shops,div#collapse-tourism{ float: left;width: 100%;box-shadow: 0px 0px 5px #999999;}
+.panel-heading,.input-group-addon,.btn,.form-control{ border-radius:0px;}
+.panel-group .panel+.panel{ margin-top:10px;}
+.panel{ border-bottom:0px solid #fff; border-top:0px;}
+#activmap-accordion .panel-title a:hover {
+    text-decoration: none;
+}
+#activmap-accordion .panel-title a:after {
+    font-family: FontAwesome;
+    content: '\f056';
+    float: right;
+}
+#activmap-accordion .panel-title a.collapsed:after {
+    content: '\f055';
+}
+#activmap-loc {float: right;display: block;color:#fff;}
+#activmap-reset {float: left;display: block;background:#32C5D2;color:#fff;width:100%}
+input#activmap-location {border-right: 0; width:100.5%;}
+#activmap-geolocate {
+    margin-bottom: 10px;
+}
+#activmap-wrapper { 
+     width: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top:0px;
+}
+#activmap-canvas {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+#activmap-places {
+
+    background: #f5f1f1;
+    position: absolute;
+    left: -320px;
+    z-index: 10;
+    height: 100%;
+    width: 320px;
+    padding: 0 15px;
+    overflow: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);border-left: 1px solid #ddd;
+}
+@media(max-width:991px){
+	#activmap-wrapper{ float:left; width:100%;}
+	#activmap-canvas {width: 100%!important;margin-bottom: 30px;}
+.map_div{ float:left; width:100%; padding:0px;}
+#activmap-wrapper {height: auto;}
+}
+@media(max-width:767px){
+    #activmap-places.hidden-xs {
+            display: block!important;
+    height: 200px;
+    overflow-x: auto;
+    }
+
+}
+@media(min-width:768px){
+    #activmap-places.hidden-xs {
+        display: block!important;
+    }
+}
+#activmap-results-num {
+    font-weight: bold;
+    font-size: 15px; background:#32C5D2;
+    color: #fff; text-indent:10px;
+    text-transform: uppercase;box-shadow: 0px 2px 3px #ababab;
+    padding: 10px 0;
+}
+
+.activmap-place {margin: 10px 0;background-color: #fff;border-radius: 3px; -moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #fff; cursor:pointer;}
+.activmap-place:hover,.activmap-place.active { border-color:rgba(58, 124, 236, 0.5); background:rgba(58, 124, 236, 0.08); }
+.logo_main { text-align: center;padding:0;margin:9px 15px 0 0;float:left; width:auto;}
+.activmap-place h3 {
+margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: #657783;
+    font-size: 13px;
+
+}
+.activmap-place p {
+    font-size: 10px;
+    color: #B1B1BA;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin-bottom: 0;
+}
+.panel-body input{ margin-top:0px;}
+
+h4.activmap-title {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+.activmap-brand {
+    float: left;
+    margin: 10px 10px 10px 0;
+    height: 80px;
+    width: 80px;
+}
+.activmap-brand img {
+    max-height: 100%;
+    max-width: 100%;
+}
+/* 14-06-2016 */
+.comp-location-item { cursor:pointer;margin: 10px;background-color: #fff;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border: 1px solid #EFEFEF;}
+.comp-location-item-inner {padding-top: 10px;padding-bottom: 5px;position: relative;cursor: pointer;}
+.place_list__logo {width: 110px;float: left;}
+.comp-img-logo {margin-top: 3px;height: 70px;max-width: 120px;padding-left: 10px;text-align: center;}	
+.place_list__info {padding-right: 15px;width: calc(100% - 110px);float: left;}
+.comp-main-header-item {margin-bottom: 5px;text-transform: uppercase;margin-left: 10px;color: #657783;font-size: 13px;}
+.view-place-card-address {font-size: 10px;color: #B1B1BA;margin-left: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.border-top {border-top: solid 1px #EFEFEF;background-color: #FBFBFB;border-radius: 0 0 3px 3px;-moz-border-radius: 0 0 3px 3px;-webkit-border-radius: 0 0 3px 3px;}
+.margin-none {margin: 0!important;}
+.float-right {float: right;}
+.subs-a {margin: 0;font-size: 12px;}
+.subs-a, .subs-a:hover {color: #3A7CEC;}
+.comp-header-item {padding-top: 10px;padding-bottom: 10px;text-transform: uppercase;font-size: 11px;margin-bottom: 0;}
+.comp-img-default {width: 70px;height: 70px;border: 1px solid #EEE;-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.comp-default-content {background-color: #E64C3C;width: 68px;height: 68px;border: 2px solid #FFF;padding: 10px;opacity: .2;}
+.comp-location-item--active, .comp-location-item:hover {background-color: #F0F8FB;border-color: #4FB5E1;}

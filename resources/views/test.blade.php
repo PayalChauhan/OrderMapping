@@ -412,7 +412,7 @@
         $('#activmap-wrapper').activmap({
             places: [<?php echo $datap; ?>],
             icon: 'images/onlineshopping.png',
-            zoom: 2,
+            zoom: 12,
             posPanel: 'left',
             showPanel: true,
             radius: 0,
